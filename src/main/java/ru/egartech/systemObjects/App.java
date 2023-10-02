@@ -6,10 +6,11 @@ import java.util.Random;
 
 public class App {
     public static void main(String[] args) {
+        int countMessage = 6;
         // список для хранения сообщений из внешних систем
         List<BaseObjects> baseObjectsList = new ArrayList<>();
         // заполняем список генерируемыми данными
-        for (int i=0; i<6; i++) {
+        for (int i=0; i<countMessage; i++) {
             baseObjectsList.add(new ObjectsFactory().createObject(getCodeSystem()));
         }
         // выводим в консоль элементы списка
